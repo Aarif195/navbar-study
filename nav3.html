@@ -1,49 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Navgation Bar</title>
-  <link rel="stylesheet" href="nav3.css">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
-
 <body>
-  <nav>
-    <ul class="sidebar">
-      <!-- <li><a href="#">Coding2go</a></li> -->
-      <li onclick=hidesidebar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
-      <li><a href="">Blog</a></li>
-      <li><a href="#">Products</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Forum</a></li>
-    </ul>
-    <ul>
-      <li class="hideOnmobile"><a href="nav.html">Coding2go</a></li>
-      <li class="hideOnmobile"><a href="#">Blog</a></li>
-      <li class="hideOnmobile"><a href="#">Products</a></li>
-      <li class="hideOnmobile"><a href="#">About</a></li>
-      <li class="hideOnmobile"><a href="#">Forum</a></li>
-      <li class="menu-button" onclick=showsidebar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
-    </ul>
-  </nav>
+<header>
+<a href="#" class="logo"><img src="mange-logo.jpg" alt=""><span>Logo</span></a>
+
+<ul class="navber">
+  <li><a href="nav3.html" class="active">Home</a></li>
+  <li><a href="#">About us</a></li>
+  <li><a href="#">Services</a></li>
+  <li><a href="#">Blog</a></li>
+  <li><a href="#">Contact</a></li>
+</ul>
+
+<div class="main">
+  <a href="#" class="user"><i class="fa fa-user"></i>Sign In</a>
+  <a href="#">Register</a>
+  <!-- <div class="bx bx-menu" id="menu-icon"> -->
+    <i class="fa-solid fa-bars " id="menu-icon"></i>
+  </div>
+</div>
+</header>
 
 
-  <script>
-    function showsidebar() {
-      const sidebar = document.querySelector('.sidebar')
-      sidebar.style.display = 'flex'
-    }
+<script type="text/javascript">
 
-    function hidesidebar() {
-      const sidebar = document.querySelector('.sidebar')
-      sidebar.style.display = 'none'
-
-    }
+let menu = document.querySelector('#menu-icon');
+let navber = document.querySelector('.navber');
 
 
-  </script>
+// menu.click = () => {
+//   console.log('sp');
+//   menu.classList.toggle ('fa');
+//   navber.classList.toggle('open');
+// }
+
+menu.addEventListener('click', () => {
+  console.log('sp');
+  menu.classList.toggle('fa');
+  navber.classList.toggle('open');
+});
+</script>
+
 </body>
-
 </html>
