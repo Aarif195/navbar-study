@@ -14,7 +14,7 @@ body {
 nav {
   background-color: #fff;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
- 
+
 }
 
 nav ul {
@@ -22,15 +22,15 @@ nav ul {
   align-items: center;
   justify-content: flex-end;
   list-style: none;
+  height: 50px;
   width: 100%;
 }
 
 nav li {
-  height: 50px;
-
+  padding: 10px 15px;
 }
 
-nav a{
+nav a {
   padding: 0 20px;
   text-decoration: none;
   /* display: flex; */
@@ -38,7 +38,7 @@ nav a{
   color: black;
 }
 
-nav a:hover {
+nav li:hover {
   background-color: #f0f0f0;
 }
 
@@ -56,11 +56,11 @@ nav li:first-child {
   background-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
   box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.1);
-/* display: flex; */
-display: none;
-flex-direction: column;
-align-items: flex-start;
-justify-content: flex-start;
+  /* display: flex; */
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .sidebar li {
@@ -68,30 +68,32 @@ justify-content: flex-start;
 }
 
 
-.sidebar a{
+.sidebar a {
   width: 100%;
 }
 
 .menu-button {
-display: none;
+  display: none;
 }
 
 @media (max-width: 425px) {
-  .hideOnmobile{
+  .hideOnmobile {
     display: none;
   }
-.menu-button {
-  display: block;
+
+  .menu-button {
+    display: block;
+  }
+
+  .sidebar {
+    width: 100%;
+    /* display: flex; */
+  }
 }
 
-.sidebar {
-  width: 100%;
-  /* display: flex; */
-}
-}
 @media (max-width: 400px) {
   .sidebar {
     width: 100%;
-    
+
   }
 }

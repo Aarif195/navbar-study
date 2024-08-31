@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,35 +8,35 @@
   <link rel="stylesheet" href="nav3.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
+
 <body>
   <nav>
     <ul class="sidebar">
       <!-- <li><a href="#">Coding2go</a></li> -->
       <li onclick=hidesidebar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
-      <li><a href=""></a>Blog</li>
-      <li><a href="#"></a>Products</li>
-      <li><a href="#"></a>About</li>
-      <li><a href="#"></a>Forum</li>
+      <li><a href="">Blog</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Forum</a></li>
     </ul>
     <ul>
       <li class="hideOnmobile"><a href="nav.html">Coding2go</a></li>
-      <li class="hideOnmobile"><a href="#"></a>Blog</li>
-      <li class="hideOnmobile"><a href="#"></a>Products</li>
-      <li class="hideOnmobile"><a href="#"></a>About</li>
-      <li class="hideOnmobile"><a href="#"></a>Forum</li>
+      <li class="hideOnmobile"><a href="#">Blog</a></li>
+      <li class="hideOnmobile"><a href="#">Products</a></li>
+      <li class="hideOnmobile"><a href="#">About</a></li>
+      <li class="hideOnmobile"><a href="#">Forum</a></li>
       <li class="menu-button" onclick=showsidebar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
     </ul>
   </nav>
 
 
   <script>
-    function showsidebar(){
+    function showsidebar() {
       const sidebar = document.querySelector('.sidebar')
       sidebar.style.display = 'flex'
-
     }
 
-    function hidesidebar(){
+    function hidesidebar() {
       const sidebar = document.querySelector('.sidebar')
       sidebar.style.display = 'none'
 
@@ -44,4 +45,5 @@
 
   </script>
 </body>
+
 </html>
